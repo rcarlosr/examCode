@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SearchFightSolution>
+   <ListOfSearchEngines>
+	<SearchEngine>
+		<Name>Google</Name>
+		<reqString>
+			<URL>https://www.google.com</URL>
+			<SearchPrefix>/search?q=</SearchPrefix>
+			<DefaultParameters></DefaultParameters>
+			<SymbolSpace>+</SymbolSpace>
+		</reqString>
+		<resXMLElement>
+			<elemDivName>resultStats</elemDivName>
+			<elemTagName>DIV</elemTagName>
+			<elemLevelsBelow>0</elemLevelsBelow>
+			<elemHtmlKeyword>result</elemHtmlKeyword>
+			<elemMultiplier>1</elemMultiplier>
+		</resXMLElement>
+	</SearchEngine>
+	<SearchEngine>
+		<Name>MSN Search</Name>
+		<reqString>
+			<URL>https://www.bing.com</URL>
+			<SearchPrefix>/search?q=</SearchPrefix>
+			<DefaultParameters>&amp;go=Search&amp;qs=ds&amp;form=QBRE</DefaultParameters>
+			<SymbolSpace>+</SymbolSpace>
+		</reqString>
+		<resXMLElement>
+			<elemDivName>b_tween</elemDivName>
+			<elemTagName>SPAN</elemTagName>
+			<elemLevelsBelow>0</elemLevelsBelow>
+			<elemHtmlKeyword>result</elemHtmlKeyword>
+			<elemMultiplier>1</elemMultiplier>
+		</resXMLElement>
+	</SearchEngine>
+	<SearchEngine>
+		<Name>Yahoo</Name>
+		<reqString>
+			<URL>https://pe.search.yahoo.com</URL>
+			<SearchPrefix>/search?p=</SearchPrefix>
+			<DefaultParameters></DefaultParameters>
+			<SymbolSpace>+</SymbolSpace>
+		</reqString>
+		<resXMLElement>
+			<elemDivName>results</elemDivName>
+			<elemTagName>SPAN/DIV</elemTagName>
+			<elemLevelsBelow>0</elemLevelsBelow>
+			<elemHtmlKeyword>result</elemHtmlKeyword>
+			<elemMultiplier>1</elemMultiplier>
+		</resXMLElement>
+	</SearchEngine>
+   </ListOfSearchEngines>
+</SearchFightSolution>
